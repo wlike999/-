@@ -1,0 +1,43 @@
+<view class="good_detail">
+    <swiper indicator-dots="{{true}}"  autoplay interval="2000" duration="2000" circular >
+        <swiper-item 
+            wx:for="{{good.fileIDs}}" wx:key="index" bindtap="preview" data-url="{{good.fileIDs[index]}}">
+            <!--  由于轮播图存在默认的样式需要进行修改  -->
+            <image src="{{good.fileIDs[index]}}" mode="widthFix" />
+        </swiper-item>
+    </swiper>
+</view>
+<view class="good_price">
+        ￥{{good.price}}
+    </view>
+    <view class="goods_name_row">
+        <view class="good_name">
+            {{good.title}}
+        </view>
+    </view>
+
+    <view class="good_info">
+        <view class="good_info_title">详情介绍</view>
+        <view class="good_info_content">
+                <rich-text nodes="{{good.vita}}"></rich-text>  
+        </view>
+    </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<van-goods-action >
+  <van-goods-action-icon icon="chat-o" text="联系卖家" />
+  <van-goods-action-icon icon="cart-o" text="收藏" info="{{number}}" bind:click="markList"/>
+  <van-goods-action-button color="#be99ff" text="{{markText}}" type="warning" bind:click="mark"/>
+  <van-goods-action-button color="#7232dd" text="立即购买" />
+</van-goods-action>

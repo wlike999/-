@@ -1,0 +1,107 @@
+/* miniprogram/pages/postGoods/postGoods.wxss */
+page{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 35rpx;
+  padding: 20rpx 25rpx;
+}
+.cancel{
+  padding: 15rpx;
+}
+.post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  background-color:#fc8705;
+  padding: 15rpx;
+  border-radius: 40rpx;
+}
+.mainView{
+  width: 700rpx;
+  margin-top: 20rpx;
+  margin: 20rpx;
+}
+.selectItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20rpx;
+  width: 720;
+}
+.item{
+  width: 144rpx;
+  margin: 3rpx;
+  padding: 8rpx 4rpx ;
+  border-radius: 10rpx;
+  background-color: rgb(186,190,189,0.5);
+  opacity: 0.5;
+  box-shadow:0px 2px 20px 1px #7c7c7c;
+}
+.item.active{
+  width: 144rpx;
+  margin: 3rpx;
+  padding: 8rpx 4rpx ;
+  border-radius: 10rpx;
+  background-color:rgb(0,185,185);
+  opacity : 1;
+  box-shadow:0px 2px 20px 1px #7c7c7c;
+}
+.photo{
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(186,190,189,0.5);
+}
+.photo image{
+  width: 8vw;
+  height: 8vw;
+}
+.imgContainer{
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+}
+.img{
+  width: 30vw;
+  height: 30vw;
+}
+.closeImg{
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.imgItem{
+  display: flex;
+  flex-direction: row;
+}
+.imageRootAll{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width:  720rpx;
+}
+page {
+  background: papayawhip;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.loli.net/2020/12/15/eCNRo4gtkZGEVu2.png);
+  box-sizing: border-box;
+    background-size: 100% auto;
+}

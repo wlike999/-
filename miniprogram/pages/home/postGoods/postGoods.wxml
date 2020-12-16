@@ -1,0 +1,9 @@
+<!--miniprogram/pages/home/postGoods/postGoods.wxml-->
+<view class="container">
+<view class="addGoods" bindtap="post" hover-stay-time="100">
+发布商品
+</view>
+<view class="wantBuy" bindtap="want">
+求购商品
+</view>
+</view>

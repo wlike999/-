@@ -1,0 +1,44 @@
+<!--miniprogram/pages/postGoods/postGoods.wxml-->
+<view class="topContainer">
+  <view class="cancel" bindtap="onCancel" hover-stay-time="100">
+    取消
+  </view>
+  <view class="post" bindtap="publish" hover-stay-time="100">
+    发布
+  </view>
+</view>
+<view class="mainView">
+  <van-field label="商品名称：" placeholder="请输入商品名称" data-prop="goodTitle" border="{{ false }}" bind:change="onChange"
+    size="large" />
+  <van-cell title="校区" size='large' center= "true"  border="{{false}}" is-link value="{{campus}}" arrow-direction="{{down}}"
+    clickable="true" bind:click="onClick"/>
+  <van-action-sheet title="请选择校区" z-index="100000" show="{{ show }}" actions="{{ actions }}" bind:close="onClose1"
+    bind:select="onSelect1" />
+  <van-field label="商品价格：" placeholder="请输入商品价格" data-prop="goodPrice" border="{{ false }}" bind:change="onChange"
+    size="large" />
+  <van-field size="large" label="商品介绍：" placeholder="请输入商品介绍" data-prop="goodVita" type="textarea" border="{{ true }}"
+    autosize="{{textareaSize}}" bind:change="onChange" show-word-limit="true" maxlength="300" />
+  <view class="selectItem">
+    <view class="item {{show1?'active':''}}" data-num="1" bindtap="onSelect">电子产品</view>
+    <view class="item {{show2?'active':''}}" data-num="2" bindtap="onSelect">二手书籍</view>
+    <view class="item {{show3?'active':''}}" data-num="3" bindtap="onSelect">生活用品</view>
+    <view class="item {{show4?'active':''}}" data-num="4" bindtap="onSelect">体育器械</view>
+    <view class="item {{show5?'active':''}}" data-num="5" bindtap="onSelect">其他类别</view>
+  </view>
+  <view class="imageRootAll">
+    <view class="imgRoot" wx:for="{{imgList}}" wx:key="index" bindtap="ViewImage" data-url="{{imgList[index]}}">
+      <view class="imgItem" data-index="{{index}}">
+        <view class="imgContainer">
+          <image class="img" src='{{item}}' mode='aspectFill'></image>
+          <image class="closeImg" catchtap="DeleteImg" src="../../images/delete.png" data-index="{{index}}">
+          </image>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{imgList.length < 9}}" class="imgRoot">
+      <view class="photo" bindtap="chooseImageTap">
+        <image src="../../images/add.png" mode=" scaleToFill"></image>
+      </view>
+    </view>
+  </view>
+</view>

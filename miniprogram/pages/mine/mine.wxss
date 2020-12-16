@@ -1,0 +1,114 @@
+/* pages/mine/mine.wxss */
+.line{
+  width: 100%;
+  background-color: gray;
+  opacity: 0.3;
+  height: 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.topContainer{
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.userContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.topRightContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gray;
+  opacity: 0.6;
+}
+.tapOnHover{
+  color:black;
+  opacity: 1;
+}
+.imgBox{
+  width: 32%;
+  margin: 0.65%;
+  padding-bottom: 32%;
+  height: 0;
+  position: relative;
+}  
+image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.name{
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+/* pages/login/login.wxss */
+page{
+  height: 100%;    /* 使用page的height可以使页面占全屏 */
+  background-color: #fafafa;
+ }
+.login-container{
+  padding: 0 5%;
+  height: 20%;
+}
+.title{
+  font-size: large;
+  text-align: center;
+  padding-top: 5%;
+  font-weight: bold;
+}
+.login-box{
+  margin-top: 5%;
+  padding: 5% 5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px #888888;
+}
+.login-box>input{
+  margin: 5% 0 8% 0;
+  border-bottom: 1rpx solid lightgray;
+}
+.about{
+  color:#4682B4;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+page {
+  background: papayawhip;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.loli.net/2020/12/15/eCNRo4gtkZGEVu2.png);
+  box-sizing: border-box;
+    background-size: 100% auto;
+}
+.campus{
+  color:#4682B4;
+  flex-wrap:warp;
+  white-space:pre-wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.tel{
+  color:#4682B4;
+  flex-wrap:warp;
+  white-space:pre-wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}

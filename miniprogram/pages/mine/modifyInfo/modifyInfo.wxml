@@ -1,0 +1,57 @@
+<!--miniprogram/pages/mine/modifyInfo/modifyInfo.wxml-->
+<view class="title">
+点击修改头像
+</view>
+<view class="top">
+  <view class="imgBox" bindtap="chooseImageTap" hover-class="image-hover" hover-stay-time="100">
+    <image class="image" src="{{avatarUrl}}"></image>
+    <view class="loading" show ="false" style="display:{{showLoading}}">
+      <van-loading color="#1989fa" size="50px"/> 
+      <text>上传中</text>
+    </view>
+  </view>
+
+</view>
+<van-cell-group>
+  <van-field
+    value="{{ nickName }}"
+    data-prop="nickName"
+    placeholder="{{nickNameMsg}}"
+    label="昵称："
+    border="{{ true }}"
+    bind:change="onChange"
+  />
+  <van-cell title="校区" center= "true"  is-link value="{{campus}}" arrow-direction="{{down}}"
+    clickable="true" bind:click="onClick"/>
+  <van-action-sheet title="请选择校区" z-index="100000" show="{{ show }}" actions="{{ actions }}" bind:close="onClose1"
+    bind:select="onSelect1" />
+  <van-field
+    value="{{ tel }}"
+    auto-focus = "false"
+    data-prop="tel"
+    placeholder="请输入手机号码"
+    label="手机号码："
+    border="{{ true }}"
+    bind:change="onChange"
+    error-message ="{{telMessage}}"
+  />
+  <van-field
+    value="{{ vita }}"
+    data-prop="vita"
+    type="textarea"
+    autosize
+    placeholder="请输入个人简介"
+    label="个人简介："
+    border="{{ true }}"
+    bind:change="onChange"
+  />
+  <view class="btnContainer" >
+    <view class="confirm">
+      <van-button type="danger" bind:click="onCancel" >取消修改</van-button>
+    </view>
+    <view class="cancel">
+      <van-button type="info" bind:click="onConfirm">确认修改</van-button>
+    </view>
+  </view>
+
+</van-cell-group>

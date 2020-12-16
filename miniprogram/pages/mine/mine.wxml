@@ -1,0 +1,84 @@
+<!--pages/mine/mine.wxml-->
+<!--<view class="topContainer">
+  <view  class="userContainer" wx:if="{{userInfo.openId}}"> 
+  <view class="imgBox">
+    <image class="image" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="name">
+  <view class="nickName">
+    昵称：{{userInfo.nickName}}
+  </view>
+  <view class="isCertificated" wx:if="{{userInfo.isCertificated}}">
+    <icon></icon>
+    <text>已认证</text>
+  </view>
+  </view>
+  </view>
+  <view class="topRightContainer" bindtap="modifyInfo">
+    <text>修改个人信息</text>
+    <van-icon name="arrow" />
+  </view>
+</view>
+<view class="line"></view>-->
+
+<view class="login-container">
+  <view class="title">我的主页</view>
+  <view class="login-box">
+    <view class="topContainer">
+  <view  class="userContainer" wx:if="{{userInfo.openId}}"> 
+  <view class="imgBox">
+    <image class="image" src="{{userInfo.avatarUrl}}" mode=" aspectFit"></image>
+  </view>
+  <view class="name">
+  <view class="nickName">
+    昵称：{{userInfo.nickName}}
+  </view>
+  <view class="isCertificated" wx:if="{{userInfo.isCertificated}}">
+    <icon></icon>
+    <text>已认证</text>
+  </view>
+  </view>
+  </view>
+  <view class="topRightContainer" hover-class="tapOnHover" hover-stay-time="100" bindtap="modifyInfo">
+    <text>修改个人信息</text>
+    <van-icon name="arrow" />
+  </view>
+</view>
+  </view>
+</view>
+<view class="login-box">
+    <view class="topContainer">
+  <view  class="userContainer" wx:if="{{userInfo.openId}}"> 
+    <view class="imgBox">
+    <image class="image" src="../../images/qiyeyuanquwuye-xianxing (2).png" mode=" aspectFit"></image>
+  </view>
+<view class="campus">校区：                   {{userInfo.campus}}</view>  
+</view>
+</view>
+</view>
+<view class="login-box">
+    <view class="topContainer">
+  <view  class="userContainer" wx:if="{{userInfo.openId}}"> 
+    <view class="imgBox">
+    <image class="image" src="../../images/dianhua.jpg" mode=" aspectFit"></image>
+  </view>
+<view class="tel">电话：{{userInfo.tel}}</view>  
+</view>
+</view>
+</view>
+<view class="login-box">
+    <view class="topContainer">
+  <view  class="userContainer" wx:if="{{userInfo.openId}}"> 
+    <view class="imgBox">
+    <image class="image" src="../../images/yonghu-xianxing (2).png" mode=" aspectFit"></image>
+  </view>
+<view class="campus">个人简介：           {{userInfo.vita}}</view>  
+</view>
+</view>
+</view>
+<view><text>\n</text></view>
+<view><text>\n</text></view>
+<view><text>\n</text></view>
+<view class='about'>
+  <navigator url="../about/about">关于</navigator>
+</view>

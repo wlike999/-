@@ -1,0 +1,40 @@
+/* miniprogram/pages/home/postGoods/postGoods.wxss */
+page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  margin-top: 10vw;
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #e0f7fa;
+  border-radius: 10%;
+}
+.addGoods{
+  width: 30vw;
+  height: 30vw;
+  background-color: #ffc428;
+  box-shadow:0px 2px 20px 1px rgb(147,138,107);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:microsoft yahei;
+  font-size: large;
+}
+.wantBuy{
+  font-size: large;
+  font-family:microsoft yahei;
+  box-shadow:0px 2px 20px 1px rgb(147,138,107);
+  width: 30vw;
+  height: 30vw;
+  background-color: #e53935;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

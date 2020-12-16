@@ -1,0 +1,23 @@
+
+<view class="toTop" hidden='{{!floorstatus}}' bindtap="goTop">
+<image src="../../images/toTop.png"></image>
+</view>
+<view class="scrollView">
+  <view class="container"  wx:for="{{goodList}}" wx:key="index" >
+  <image src="{{goodList[index].fileIDs[0]}}" mode="aspectFill"></image>
+  <view class="blockContainer"></view>
+  <view class="circleContainer">
+    <image src="{{goodList[index].sellerAvatarUrl}}" mode="aspectFill"></image>
+  </view>
+  <view class="bottomContainer">
+    <view class="price">
+      <view class="currentPrice">${{goodList[index].price}}</view>
+      <view class="originalPrice">$999</view>
+    </view>
+    <view class="introduction">
+      <view class="goodTitle">{{goodList[index].title}}</view>
+      <view class="detail">{{goodList[index].vita}}</view>
+    </view>
+  </view>
+</view>
+</view>

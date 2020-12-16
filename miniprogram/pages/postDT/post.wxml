@@ -1,0 +1,10 @@
+<!--miniprogram/pages/postDT/post.wxml-->
+<van-empty
+class="custom-image"
+  image="/images/06.png"
+  description="音乐带给你更好的购物体验！"
+/>
+<audio  poster="{{poster1}}" name="{{name1}}" author="{{author1}}" 
+ src="{{src1}}" id="myAudio" controls loop></audio>
+ <audio  poster="{{poster2}}" name="{{name2}}" author="{{author2}}" 
+ src="{{src2}}" id="myAudio" controls loop></audio>

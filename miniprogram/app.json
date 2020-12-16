@@ -1,0 +1,78 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index"
+  },
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/postDT/post",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/mine/modifyInfo/modifyInfo",
+    "pages/home/postGoods/postGoods",
+    "pages/searchList/searchList",
+    "pages/postGoods/postGoods",
+    "pages/goodDetail/goodDetail",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTitleText": "拾肆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#87CEEB",
+    "color": "#a9b7b7",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/shangpin-xianxing (2).png",
+        "iconPath": "images/shangpin-xianxing.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/qiyeyuanquwuye-xianxing (2).png",
+        "iconPath": "images/qiyeyuanquwuye-xianxing.png",
+        "pagePath": "pages/postDT/post",
+        "text": "广场"
+      },
+      {
+        "selectedIconPath": "images/add2.png",
+        "iconPath": "images/add2.png",
+        "pagePath": "pages/home/postGoods/postGoods"
+      },
+      {
+        "selectedIconPath": "images/liaotianduihua-xianxing (2).png",
+        "iconPath": "images/liaotianduihua-xianxing.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "images/yonghu-xianxing (2).png",
+        "iconPath": "images/yonghu-xianxing.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

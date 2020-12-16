@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="container1">
+    <view class="illustrate">
+    <text class="name">拾肆</text>
+</view>
+<view class="image">
+  <image src="/images/Asset.png"></image>
+</view>
+  </view>
+  <view class="loginBtn">
+<button  open-type="getUserInfo" bindgetuserinfo="onGetUserInfo"> 授权登录</button>
+</view>
+</view>
+
